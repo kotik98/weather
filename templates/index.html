@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сервис прогноза погоды</title>
+</head>
+<body>
+
+<form action="" method="post">
+        <p>
+	    <label >Введите город</label>
+	    <input type="text" name="city">
+	</p>
+	<p>
+	    <input type="submit">
+	</p>
+    </form>
+    {% if context %}
+        {% for i in context%}
+            <p>{{ i }}</p>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
